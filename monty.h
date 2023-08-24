@@ -66,6 +66,7 @@ void malloc_error(void);
 void invalid_instructions(unsigned int i, char *parse,
 		FILE *file, stack_t **stack, char *line);
 void invalid_integer(unsigned int counter, stack_t **stack);
+void message_error(stack_t **head, char *string, int count);
 
 /*monty functionality*/
 int interprete(char *line, stack_t **stack, unsigned int count, FILE *file);
@@ -80,7 +81,8 @@ void c_stack(stack_t **head, unsigned int count);
 void c_swap(stack_t **head, unsigned int count);
 void c_nop(stack_t **head, unsigned int count);
 void c_add(stack_t **head, unsigned int count);
-void add_node(stack_t **head, int n); 
+void c_sub(stack_t **head, unsigned int count);
+void add_node(stack_t **head, int n);
 void add_queue(stack_t **head, int n);
 
 /** free memory **/

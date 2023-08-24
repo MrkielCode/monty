@@ -15,7 +15,7 @@ int interprete(char *line, stack_t **stack, unsigned int count, FILE *file)
 		 {"push", c_push}, {"pall", c_pall}, {"pint", c_pint},
 		 {"pop", c_pop}, {"queue", c_queue}, {"stack", c_stack},
 		 {"swap", c_swap}, {"add", c_add}, {"nop", c_nop},
-		 {NULL, NULL}
+		 {"sub", c_sub}, {NULL, NULL}
 	};
 
 	unsigned int i = 0;
