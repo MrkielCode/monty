@@ -31,6 +31,7 @@ void add_node(stack_t **head, int n)
 	if (new_node == NULL)
 	{
 		malloc_error();
+		exit(0);
 	}
 
 	if (temp)
