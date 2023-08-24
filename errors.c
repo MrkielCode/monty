@@ -21,7 +21,8 @@ void check_args(int argc)
 
 void malloc_error(void)
 {
-	fprintf(stderr, "Error: malloc failed\n");
+	printf("Error: malloc failed\n");
+	exit(EXIT_FAILURE);
 }
 
 /**

@@ -30,8 +30,7 @@ void add_node(stack_t **head, int n)
 
 	if (new_node == NULL)
 	{
-		printf("Error\n");
-		exit(0);
+		malloc_error();
 	}
 
 	if (temp)
