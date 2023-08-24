@@ -13,10 +13,8 @@ int interprete(char *line, stack_t **stack, unsigned int count, FILE *file)
 {
 	instruction_t instructions[] = {
 		 {"push", c_push}, {"pall", c_pall}, {"pint", c_pint},
-		 {"pop", c_pop},
-		 {"queue", c_queue},
-		 {"stack", c_stack},
-		 {NULL, NULL} 
+		 {"pop", c_pop}, {"queue", c_queue}, {"stack", c_stack},
+		 {NULL, NULL}
 	};
 
 	unsigned int i = 0;
