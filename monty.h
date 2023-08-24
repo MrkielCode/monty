@@ -74,6 +74,7 @@ int interprete(char *line, stack_t **stack, unsigned int count, FILE *file);
 void add_node(stack_t **head, int n);
 void add_queue(stack_t **head, int n);
 void c_pall(stack_t **head, unsigned int count);
+void c_pint(stack_t **head, unsigned int count);
 void c_queue(stack_t **head, unsigned int count);
 void c_push(stack_t **head, unsigned int count);
 void c_stack(stack_t **head, unsigned int count);
