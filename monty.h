@@ -73,6 +73,7 @@ int interprete(char *line, stack_t **stack, unsigned int count, FILE *file);
 /** stack and queue operations **/
 void add_node(stack_t **head, int n);
 void add_queue(stack_t **head, int n);
+ssize_t getstdin(char **lineptr, int file);
 void c_pall(stack_t **head, unsigned int count);
 void c_pint(stack_t **head, unsigned int count);
 void c_pop(stack_t **head, unsigned int count);

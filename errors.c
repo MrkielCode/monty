@@ -53,6 +53,7 @@ void invalid_instructions(unsigned int i, char *parse,
 	fclose(file);
 	free(line);
 	free_stack(*stack);
+	exit(EXIT_FAILURE);
 }
 
 /**
