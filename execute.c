@@ -38,7 +38,7 @@ int interprete(char *line, stack_t **stack, unsigned int count, FILE *file)
 		i++;
 	}
 
-	if (op_parse && instructions == NULL)
+	if (op_parse && instructions[i].opcode == NULL)
 	{
 		invalid_instructions(count, op_parse, file, stack, line);
 	}
