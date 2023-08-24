@@ -21,21 +21,16 @@ void c_push(stack_t **head, unsigned int count)
 				flag = 1;
 		}
 		if (flag == 1)
-		{	fprintf(stderr, "L%d: usage: push integer\n", count);
-			fclose(args.file);
-			free(args.line);
-			free_stack(*head);
-			exit(EXIT_FAILURE);
+		{
+			invalid_integer(count, head);
 		}
 
 	}
 	else
-	{	fprintf(stderr, "L%d: usage: push integer\n", count);
-		fclose(args.file);
-		free(args.line);
-		free_stack(*head);
-		exit(EXIT_FAILURE);
+	{
+		invalid_integer(count, head);
 	}
+
 	m = atoi(args.parse);
 
 	if (args.status == 0)
