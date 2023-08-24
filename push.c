@@ -6,7 +6,6 @@
  * @count: line counter
  * Return: void
  */
-
 void c_push(stack_t **head, unsigned int count)
 {
 	int m, n = 0, flag = 0;
@@ -22,13 +21,21 @@ void c_push(stack_t **head, unsigned int count)
 				flag = 1;
 		}
 		if (flag == 1)
-		{
-			invalid_integer(count, head);
+		{	fprintf(stderr, "L%d: usage: push integer\n", count);
+			fclose(args.file);
+			free(args.line);
+			free_stack(*head);
+			exit(EXIT_FAILURE);
 		}
 
 	}
 	else
-		invalid_integer(count, head);
+	{	fprintf(stderr, "L%d: usage: push integer\n", count);
+		fclose(args.file);
+		free(args.line);
+		free_stack(*head);
+		exit(EXIT_FAILURE);
+	}
 	m = atoi(args.parse);
 
 	if (args.status == 0)
