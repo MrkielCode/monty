@@ -67,4 +67,5 @@ void invalid_integer(unsigned int counter, stack_t **stack)
 	fclose(args.file);
 	free(args.line);
 	free_stack(*stack);
+	exit(EXIT_FAILURE);
 }
