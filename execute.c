@@ -40,6 +40,7 @@ int interprete(char *line, stack_t **stack, unsigned int count, FILE *file)
 	if (op_parse && instructions == NULL)
 	{
 		invalid_instructions(count, op_parse, file, stack, line);
+		exit(EXIT_FAILURE);
 	}
 	return (1);
 }
