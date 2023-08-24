@@ -20,11 +20,7 @@ void c_add(stack_t **head, unsigned int count)
 
 	if (track < 2)
 	{
-		fprintf(stderr, "L%d: can't add, stack too short\n", count);
-		fclose(args.file);
-		free(args.line);
-		free_stack(*head);
-		exit(EXIT_FAILURE);
+		message_error(head, "add", count);
 	}
 	temp = *head;
 	aux = temp->n + temp->next->n;

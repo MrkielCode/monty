@@ -20,12 +20,9 @@ void c_swap(stack_t **head, unsigned int count)
 
 	if (track < 2)
 	{
-		fprintf(stderr, "L%d: can't swap, stack too short\n", count);
-		fclose(args.file);
-		free(args.line);
-		free_stack(*head);
-		exit(EXIT_FAILURE);
+		message_error(head, "swap", count);
 	}
+
 	temp = *head;
 	aux = temp->n;
 	temp->n = temp->next->n;
