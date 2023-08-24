@@ -20,7 +20,7 @@ void c_add(stack_t **head, unsigned int count)
 
 	if (track < 2)
 	{
-		fprintf(stderr, "L%d: can't swap, stack too short\n", count);
+		fprintf(stderr, "L%d: can't add, stack too short\n", count);
 		fclose(args.file);
 		free(args.line);
 		free_stack(*head);
