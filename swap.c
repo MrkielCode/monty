@@ -20,6 +20,7 @@ void c_swap(stack_t **head, unsigned int count)
 
 	if (track < 2)
 	{
+		message_error(head, "can't swap, stack too short", count);
 		message_error(head, "swap", count);
 	}
 

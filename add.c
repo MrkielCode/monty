@@ -20,7 +20,7 @@ void c_add(stack_t **head, unsigned int count)
 
 	if (track < 2)
 	{
-		message_error(head, "add", count);
+		message_error(head, "can't add, stack too short", count);
 	}
 	temp = *head;
 	aux = temp->n + temp->next->n;

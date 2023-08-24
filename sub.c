@@ -17,7 +17,7 @@ void c_sub(stack_t **head, unsigned int count)
 
 	if (track < 2)
 	{
-		message_error(head, "sub", count);
+		message_error(head, "can't sub, stack too short", count);
 	}
 
 	temp = *head;
