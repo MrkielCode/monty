@@ -85,6 +85,7 @@ void c_sub(stack_t **head, unsigned int count);
 void c_div(stack_t **head, unsigned int count);
 void c_mul(stack_t **head, unsigned int count);
 void c_mod(stack_t **head, unsigned int count);
+void c_pchar(stack_t **head, unsigned int count);
 void add_node(stack_t **head, int n);
 void add_queue(stack_t **head, int n);
 
