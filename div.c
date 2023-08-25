@@ -26,7 +26,7 @@ void c_div(stack_t **head, unsigned int count)
 	if (temp->n == 0)
 		message_error(head, "division by zero", count);
 
-	aux = temp->n / temp->next->n;
+	aux = temp->next->n / temp->n;
 	temp->next->n = aux;
 	*head = temp->next;
 	free(temp);
