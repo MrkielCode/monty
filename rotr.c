@@ -22,7 +22,7 @@ void c_rotr(stack_t **head, unsigned int count)
 	}
 
 	temp->next = *head;
-	(*head)->prev->next = NULL;
+	temp->prev->next = NULL;
 	temp->next = NULL;
 	(*head)->prev = temp;
 	(*head) = temp;
