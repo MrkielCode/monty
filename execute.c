@@ -17,8 +17,8 @@ int interprete(char *line, stack_t **stack, unsigned int count, FILE *file)
 		 {"swap", c_swap}, {"add", c_add}, {"nop", c_nop},
 		 {"sub", c_sub}, {"div", c_div}, {"mul", c_mul},
 		 {"mod", c_mod}, {"pchar", c_pchar}, {"pstr", c_pstr},
-		 {NULL, NULL}
-	};
+		 {"rotl", c_rotl}, {"rotr", c_rotr}, {NULL, NULL}
+		 };
 
 	unsigned int i = 0;
 	char *op_parse;
