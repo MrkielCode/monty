@@ -11,16 +11,18 @@ void c_rotr(stack_t **head, unsigned int count)
 	stack_t *temp;
 	(void) count;
 
-	temp = *head;
 	if (*head == NULL || (*head)->next == NULL)
 		return;
+
+	temp = *head;
+
 	while (temp->next)
 	{
 		temp = temp->next;
 	}
 
 	temp->next = *head;
-	temp->prev->next = NULL;
+	(*head)->prev->next = NULL;
 	temp->next = NULL;
 	(*head)->prev = temp;
 	(*head) = temp;
